@@ -1,0 +1,55 @@
+variable "name" {
+    type=string
+    default="rg1"
+}
+
+
+
+
+resource "azurerm_resource_group" "rg" {
+                                                              name="rajat1"
+                                                              name=["rg1","rg2"]
+                                                              name={
+                                                                name1="rg1"
+                                                                location="west us"
+                                                              }
+    count= 5                                                   name=123
+                                                               name="false"
+  name     =                                                 
+  location = "West Europe"
+}
+
+             #variable types
+
+    (1)  String =  "1234" ,  "rajat"  , "yes" , "false"
+    (2)  Numeric = 123
+    (3)  Boolean = false,True,Yes,No 
+    Advance Varaiable ---
+    (a) count  - index
+    (b) list  - toset  loop []
+    (c) map - for_each loop {}
+
+        map - key:value pair
+
+           ####### Map ###########
+        resource "azurerm_resource_group" "rg" {
+   for_each = {
+    rg1={
+        name="rg1"
+        location="west us"
+    }
+
+    rg2={
+        name="rg2"
+        location="west europe"
+    }
+   }
+ name=each.value.name
+ location=each.value.location
+}
+   #######Count######
+resource "azurerm_resource_group" "rg" {
+  count = 50
+ name="hcl-${count.index}"
+ location="west us"
+}
