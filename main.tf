@@ -30,7 +30,7 @@ resource "azurerm_resource_group" "rg7" {
    location="central india"
 }
 
-resource "azurerm_resource_group" "rg7" {
-   name="rg7"
+resource "azurerm_resource_group" "rg8" {
+   name="rg8"
    location="central india"
 }
