@@ -25,6 +25,10 @@ resource "azurerm_resource_group" "rg6" {
    name="rg6"
    location="central india"
 }
+resource "azurerm_resource_group" "rg7" {
+   name="rg7"
+   location="central india"
+}
 
 resource "azurerm_resource_group" "rg7" {
    name="rg7"
