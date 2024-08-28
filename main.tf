@@ -14,5 +14,10 @@ resource "azurerm_resource_group" "rg3" {
 resource "azurerm_resource_group" "rg4" {
    name="rg4"
    location="central india"
+}
 
+resource "azurerm_resource_group" "rg5" {
+   name="rg5"
+   location="central india"
+}
 
